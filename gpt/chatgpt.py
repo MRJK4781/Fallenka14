@@ -8,7 +8,8 @@ from pyrogram import *
 from pyrogram.types import *
 from pyrogram import Client as ren 
 from pyrogram.errors import MessageNotModified
-from config import OPENAI_API 
+from config import OPENAI_API
+from gpt.useless import *
 
 @app.on_message(filters.command("ask") & filters.private | filters.group)
 async def chatgpt(c: Client, m: Message):
