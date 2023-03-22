@@ -12,8 +12,8 @@ from config import OPENAI_API
 from FallenMusic import app
 from gpt.useless import *
 
-@app.on_message(filters.command("ask") & filters.private | filters.group)
-async def chatgpt(c: Client, m: Message):
+@app.on_message(filters.command("ask"))
+async def chatgpt(c: app, m: Message):
     randydev = (
         m.text.split(None, 1)[1]
         if len(
