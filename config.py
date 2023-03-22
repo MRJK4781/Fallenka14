@@ -22,6 +22,6 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1356469075").split()))
-
+OPENAI_API = getenv("OPENAI_API", "") # get api key : https://platform.openai.com/account/api-keys
 
 FAILED = "https://te.legra.ph/file/4c896584b592593c00aa8.jpg"
