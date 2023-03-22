@@ -45,6 +45,11 @@
         "description": "Link of your telegram support group. (Must pe public)",
         "value": "https://t.me/DevilsHeavenMF",
         "required": false
+      },
+       "OPENAI_API": {
+        "description": "get api key : openai.com",
+        "value": "",
+        "required": true
       }
     },
     "buildpacks": [
