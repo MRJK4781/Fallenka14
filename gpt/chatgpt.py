@@ -6,9 +6,10 @@ import random
 import asyncio
 from pyrogram import *
 from pyrogram.types import *
-from pyrogram import Client as ren 
+# from pyrogram import Client as app
 from pyrogram.errors import MessageNotModified
 from config import OPENAI_API
+from FallenMusic import app
 from gpt.useless import *
 
 @app.on_message(filters.command("ask") & filters.private | filters.group)
